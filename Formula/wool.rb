@@ -5,15 +5,15 @@
 class Wool < Formula
   desc "Wool is a cloud for developers."
   homepage "https://wool.dev"
-  version "0.1.6"
+  version "0.1.7"
   license ":cannot_represent"
 
   depends_on "buildpacks/tap/pack"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://wool-sandbox-aws1-releases.s3.amazonaws.com/wool/v0.1.6/wool_Darwin_arm64.tar.gz"
-      sha256 "da541cf3ae560067ece34582209e5be96783b8ff6c66970c57f5dbb27b3c7fa1"
+      url "https://wool-sandbox-aws1-releases.s3.amazonaws.com/wool/v0.1.7/wool_Darwin_arm64.tar.gz"
+      sha256 "844c785b0d2fc40b88de8cfcb126703cc39bd649192067963465a1f9776f5f7a"
 
       def install
         bin.install "wool"
@@ -23,8 +23,8 @@ class Wool < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://wool-sandbox-aws1-releases.s3.amazonaws.com/wool/v0.1.6/wool_Linux_x86_64.tar.gz"
-      sha256 "aeb502832927176732aff503c7297362e9a9f62301a3a3aa66470ca3c729efb5"
+      url "https://wool-sandbox-aws1-releases.s3.amazonaws.com/wool/v0.1.7/wool_Linux_x86_64.tar.gz"
+      sha256 "b620870e55d83af3aadff270e8f97460c4503ceac24a436d924e70938cb39d0b"
 
       def install
         bin.install "wool"
